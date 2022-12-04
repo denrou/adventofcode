@@ -65,6 +65,8 @@ for ruckstack in data:
     wrong = compartment_1.intersection(compartment_2)
     score += weight[wrong.pop()]
 
+print(score)
+
 # Part 2
 score = 0
 for i, ruckstack in enumerate(data):
