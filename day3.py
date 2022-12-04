@@ -73,8 +73,8 @@ for i, ruckstack in enumerate(data):
         set_group = set(ruckstack)
     else:
         set_group = set_group.intersection(set(ruckstack))
-    if i % 3 == 2:
-        set_group.remove("\n")
-        score += weight[set_group.pop()]
+        if i % 3 == 2:
+            set_group.remove("\n")
+            score += weight[set_group.pop()]
 
 print(score)
