@@ -5,8 +5,7 @@ with open("day6.txt") as f:
 def message(data, n=4):
     for i, _ in enumerate(data):
         if len(set(data[i : (i + n)])) == n:
-            break
-    return i + n
+            return i + n
 
 
 print(message(data, 4))
